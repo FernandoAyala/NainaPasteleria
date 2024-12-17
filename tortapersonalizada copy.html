@@ -14,6 +14,9 @@
             <li class="menu_lista">
                 <a class="menu_link" href="menu.html"> <h3><b></b> Nuestro men&uacute;</b></h3></a>
             </li>
+            <li class="menu_lista">
+               <a class="menu_link" href="tortapersonalizada.html"> <h3><b></b> Tortas personalizadas</b></h3></a>
+        </li>
     </ol>
     </p>
     <h1>Tortas personalizadas</h1>
@@ -59,23 +62,7 @@
         </tr>
 
     </table>
-    <br>
     <form>
-        <fieldset> 
-            <legend>La torta de mis sueños</legend><br>
-       <label for="nombre">Nombre:</label>  
-        <input type="text" id="nombre" placeholder="Nombre y Apellido" required="true"/><br>
-        <label for="contacto">Contacto:</label>  
-        <input type="number" id="contacto" placeholder="Numero de celular" required="true"/>
-
-        <h4><ins>Decoracion</ins></h4>
-        <input type="radio" id="tipo" name="tipo" value="tipo"> 
-        <label for=" tipo">Torta Buttercream</label>
-         <input type="radio" id="tipo" name="tipo" value="tipo"> 
-        <label for=" tipo">Torta Crema</label>
-        <input type="radio" id="tipo" name="tipo" value="tipo"> 
-        <label for=" tipo">Torta Forrada</label>
-
         <label for="Fecha del evento">
             <h4><ins><p> fecha del evento </p></ins></h4>
         </label>
@@ -87,49 +74,46 @@
         <label for="porciones">
             <h4><ins>Cantidad de porciones</ins></h4>
         </label>
-        <input type="number" id="porciones" name="porciones" min=0 max=20/>
-
-         <br>
-           <label for="bizcochuelo"><h4><ins>Bizcochuelo</ins></h4></label>
-           <select id="bizcochuelo" name="bizcochuelo" >
-            <option value="" selected disabled hidden>Elegir sabor</option>
+        <input type="number" id="porciones" name="porciones" min=0 />
+    </p>
+    <p>
+    <ol>
+            <h4><ins>Bizcochuelo</ins></h4>
+            <ul>
+                <input type="radio" name="Bizcochuelo" value="Bizcochuelo"> 
+                <select>
+                    <option value="" selected disabled hidden>Elegir sabor</option>
                     <option value="chocolate">Chocolate </option>
                     <option value="vainilla">Vainilla</option>
                     <option value="marmolado">Marmolado</option>
                     <option value="Naranja">Naranja</option>
                     <option value="limon">Limon</option>
                     <option value="super choco">Super chocolatoso</option>
-            
-           </select>
-   
-           <label><h4><ins>Rellenos</ins></h4></label>
-           <input type="checkbox" id="Tramontana" name="relleno" value="Tramontana"/>
-           <label>Tramontana</label></fieldset>
-           <input type="checkbox" id="chocotorta" name="relleno" value="chocotorta"/>
-           <label>Chocotorta</label></br>
-           <input type="checkbox" id="pastelerachoco" name="relleno" value="pastelerachoco"/>
-           <label>Pastelera Chocolate</label></br>
-           <input type="checkbox" id="Pastelera" name="relleno" value="Pastelera"/>
-           <label>Pastelera Vainilla</label></br>
-           <input type="checkbox" id="nutela" name="relleno" value="nutela"/>
-           <label>Nutela</label></br>
-           <input type="checkbox" id="dulce" name="relleno" value="dulce"/>
-           <label>Dulce de leche</label></br>
-            <select id="dulce" name="dulce">
-                <option value="" selected disabled hidden>Elegir sabor.</option>
-                <option value="solo">solo</option>
-                <option value="chips">Con chips</option>
-                <option value="oreo"> con Oreo</option>
-                <option value="nuez">Con nuez</option>
-                <option value="merengue">Con merengue</option>
-                
-            </select></br>
-            <label for="otro" ></label>
-            <textarea id=" otro" name="otro" rows="3" cols="50"> Pensaste otra conbinacion? Contame cual</textarea></br>
-            <input type="checkbox" id="crema" name="relleno" value="crema"/>
-            <label>Crema saborizadas</label></br>
-             <select id="crema" name="crema">
-                <option value="" selected disabled hidden>Elegir sabor.</option>
+                </select>
+            </ul>
+    </ol>
+    </p>
+    <p>
+    <ol>
+            <h4><ins>Rellenos</ins></h4>
+            <ul>
+                <input type="radio" name="Tramontana" value="Tramontana">Tramontana</br>
+                <input type="radio" name="Chocotorta" value="Chocotorta">Chocotorta</br>
+                <input type="radio" name="Pastelera" value="Pastelera">Pastelera de chocolate</br>
+                <input type="radio" name="nutela" value="nutela">Nutela</br>
+                <input type="radio" name="dulce" value="dulce">Dulce de leche
+                <select>
+                    <option value="" selected disabled hidden>Elegir sabor.</option>
+                    <option value="solo">solo</option>
+                    <option value="chips">Con chips</option>
+                    <option value="oreo"> con Oreo</option>
+                    <option value="nuez">Con nuez</option>
+                    <option value="merengue">Con merengue</option>
+                </select></br>
+                <textarea cols="10" rows="2" onfocus="this.value='';">otra?Escribe tu combinacion</textarea></br>
+                <input type="radio" name="cremas" value="cremas">Cremas saborizadas
+                <select>
+                    <option value="" selected disabled hidden>Elegir sabor.</option>
                     <option value="banana">Banana split</option>
                     <option value="menta">Menta granizada</option>
                     <option value="oreo"> Crema cookie</option>
@@ -144,12 +128,11 @@
                     <option value="limon">Crema de Limon</option>
                     <option value="frutilla">Frutilla</option>
                 </select></br>
-                <label for="otro" ></label>
-            <textarea id=" otro" name="otro" rows="3" cols="50">Pensaste otro sabor? Contame cual</textarea></br>
-            
-           <input type="submit" value="Enviar"/>
-        </fieldset>
-    </form>
+                <textarea cols="10" rows="2" onfocus="this.value='';">otra?Escribe tu combinacion</textarea>
+
+            </ul>
+    </ol>
+    </p>
 </br>
 <a href="mailto:lucia.jacqueline.baez@gmail.com?subject=Pedidos tortas&body=Quiero pedir"> Enviar pepido </a>
 <link rel='stylesheet' href="css/estilo.css"/>

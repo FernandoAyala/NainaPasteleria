@@ -3,161 +3,244 @@
     <title>Naina Pasteleria</title>
 
 <body>
-    <h1 style="color: rgb(230, 63, 118); font-family: 'Courier New', Courier, monospace;"> Naina pasteleria web </h1>
+    <h1> Naina pasteleria web </h1>
     <p>
-    <ol> 
-
-        <li>
-           <a href="index.html"> <h3><b; style="color: pink; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Nosotros</b></h3></a>
+    <ol>
+        <li class="menu_lista">
+           <a class="menu_link" href="index.html"> <h3><b> Nosotros</b></h3></a>
         </li>
-        <li>
-            <a href="menu.html"> <h3><b; style="color: pink; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></b> Nuestro men&uacute;</b></h3></a>
-        </li>
-        <li>
-           <a href="tortapersonalizada.html"> <h3><b; style="color: pink; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></b> Tortas personalizadas</b></h3></a>
-        </li>
-    </ol> 
+        <li class="menu_lista">
+           <a class="menu_link" href="tortapersonalizada.html"> <h3><b></b> Tortas personalizadas</b></h3></a>
+        </li> 
+    </ol>    
 </p>
-            <h1 style="color: fuchsia; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Men&uacute; </h1>
+            <h1> Men&uacute; </h1>
         
 
-<ol>
-    <li>
-        <h4><ins>Tartas</ins></h4>
-        <ul>
+<form>
 
-            <input type="radio" name="tarta" value="lemonpie"> Lemon pie</br>
-            <input type="radio" name="tarta" value="cocoyddl"> Coco y ddl</br>
-            <input type="radio" name="tarta" value="frutal"> Frutal <select>
-                <option value="" selected disabled hidden>Elegir sabor</option>
-                <option value="frutilla">Frutilla </option>
-                <option value="frutillakiwi">Frutilla kiwi</option>
-                <option value="durazno">Durazno</option>
-                <option value="frutilladuraznokiwi">Frutilla,durazno y kiwi</option>
-                <option value="duraznobanana">Durazno y banana</option>
+  <label><h4><ins id="tarta">Tartas</ins></h4></label>
+           <input type="checkbox" id="Lemon" name="tartas" value="lemon"/>
+           <label>Lemon Pie</label><br>
+           <input type="checkbox" id="cocoyddl" name="tartas" value="cocoyddl"/>
+           <label>Coco y dulce de leche</label></br>
+           <input type="checkbox" id="frutal" name="tartas" value="frutal"/>
+           <label>Frutal</label></br>
+           <select id="frutal" name="frutal">
+             <option value="" selected disabled hidden>Elegir sabor</option>
+             <option value="frutilla">Frutilla </option>
+             <option value="frutillakiwi">Frutilla kiwi</option>
+             <option value="durazno">Durazno</option>
+             <option value="frutilladuraznokiwi">Frutilla,durazno y kiwi</option>
+             <option value="duraznobanana">Durazno y banana</option>
+           </select><br>
+          <input type="checkbox" id="pastaflora" name="tartas" value="pastaflora"/>
+           <label>Pastaflora</label></br>
+           <select id="pastaflora" name="pastaflora">
+            <option value="" selected disabled hidden>Elegir sabor.</option>
+            <option value="membrillo">Membrillo</option>
+            <option value="batata">Batata</option>
+            <option value="combinada">combinada</option>
+           </select><br>
+           <input type="checkbox" id="ricota" name="tartas" value="ricota"/>
+           <label>Ricota</label></br>
+           <input type="checkbox" id="ricotaddl" name="tartas" value="ricotaddl"/>
+           <label>Ricota con dulce de leche</label></br>
+           <input type="checkbox" id="anana" name="tartas" value="anana"/>
+           <label>Invertida de anana</label></br>
+           <input type="checkbox" id="manzana" name="tartas" value="manzana"/>
+           <label>Invertida de manzana</label></br>
 
-            </select>
-            </br>
-            <input type="radio" name="tarta" value="pastaflora"> Pastaflora<select>
-                <option value="" selected disabled hidden>Elegir sabor.</option>
-                <option value="membrillo">Membrillo</option>
-                <option value="batata">Batata</option>
-                <option value="combinada">combinada</option>
-            </select></br>
-            <input type="radio" name="tarta" value="ricota"> Ricota</br>
-            <input type="radio" name="tarta" value="ricotaddl"> Ricota y ddl</br>
-            <input type="radio" name="tarta" value="anana"> Invertida de anana</br>
-            <input type="radio" name="tarta" value="manzana"> Invertida de manzana</br>
+       <label><h4><ins>Torta</ins></h4></label>
+       <input type="checkbox" id="brownie" name="torta" value="brownie"/>
+       <label>Brownie</label><br>
+       <input type="checkbox" id="brownieddl" name="torta" value="brownieddl"/>
+       <label>Brownie dulce de leche</label></br>
+       <input type="checkbox" id="matera" name="torta" value="matera"/>     
+       <label>Matera</label><br>
+       <input type="checkbox" id="cheese" name="torta" value="cheese"/>
+       <label>Cheesecake</label><br>
+       <select id="cheese" name="cheese">
+        <option value="" selected disabled hidden>Elegir sabor.</option>
+        <option value="frutosrojos">Frutos rojos</option>
+        <option value="maracuya">Maracuya</option>
+       </select><br>
+       <input type="checkbox" id="chocotorta" name="torta" value="Chocotorta"/>
+       <label>Chocotorta</label></br>
+       <input type="checkbox" id="carrot" name="torta" value="carrot"/>
+       <label>Carrot cake</label></br>
+       <input type="checkbox" id="3leche" name="torta" value="3leche"/>
+       <label>3 Leche</label></br>
+       <select id="3leche" name="3leche">
+        <option value="selected disabled hidden"> Elegir tamaño</option>
+        <option value="3lechechico">Chico</option>
+        <option value="3lechegrande">Grande</option>
+       </select><br>
+       <input type="checkbox" id="tiramisu" name="torta" value="tiramisu"/>
+       <label>Tiramisu</label></br>
+       <input type="checkbox" id="chaja" name="torta" value="chaja"/>
+       <label>Chaja</label></br>
+       <input type="checkbox" id="selva" name="torta" value="selva"/>
+       <label>Selva negra</label></br>
+  
+       <label><h4><ins>Alfajores</ins></h4></label>
 
-        </ul>
-    </li>
-</ol>
-</p>
-<p>
-<ol>
-    <li>
-        <h4><ins>Torta</ins></h4>
-        <ul>
+       <input type="checkbox" id="maicena" name="Alfajores" value="maicena"/>
+       <label>Maicenas</label></br>   
+       <select id="maicena" name="maicena">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="maicena6">1/2 docena</option>
+        <option value="maicena12">1 docena</option>
+        <option value="maicena24">2 docenas</option>
+       </select><br>  
+       <input type="checkbox" id="mardelplata" name="Alfajores" value="mardelplata"/>
+       <label>Mar de plata</label></br>  
+       <select id="mardel" name="mardel">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="mardel6">1/2 docena</option>
+        <option value="mardel12">1 docena</option>
+        <option value="mardel24">2 docenas</option>
+       </select><br>   
+       <input type="checkbox" id="glaseados" name="Alfajores" value="glaseados"/>
+       <label>Glaseados</label></br>
+       <select id="glaseados" name="glaseados">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="glaseados6">1/2 docena</option>
+        <option value="glaseados12">1 docena</option>
+        <option value="glaseados24">2 docenas</option>
+       </select><br>
+   
+       <label><h4><ins>Panaderia</ins></h4></label>
 
-            <input type="radio" name="torta" value="brownieddl">Torta brownie</br>
-            <input type="radio" name="torta" value="brownie">Brownie</br>
-            <input type="radio" name="torta" value="matera">Matera</br>
-            <input type="radio" name="torta" value="cheese">Cheesse cake<select>
-                <option value="" selected disabled hidden>Elegir sabor.</option>
-                <option value="frutosrojos">Frutos rojos</option>
-                <option value="maracuya">Maracuya</option>
-            </select></br>
-            <input type="radio" name="torta" value="chocotorta">Chocotorta</br>
-            <input type="radio" name="torta" value="carrot">Carrot cake</br>
-            <input type="radio" name="torta" value="3leche">3 Leche</br>
-            <input type="radio" name="torta" value="tiramisu">Tiramisu</br>
-            <input type="radio" name="torta" value="chaja">Chaja</br>
-        </ul>
-    </li>
-</ol>
+       <input type="checkbox" id="rosca" name="panaderia" value="rosca"/>
+       <label>Rosca de pascua</label></br>
+       <input type="checkbox" id="pizzetas" name="panaderia" value="pizzetas"/>
+       <label>Pizzetas</label></br>
+       <input type="checkbox" id="pandesemillas" name="panaderia" value="pandesemillas"/>
+       <label>Pan de semillas</label></br>
+       <input type="checkbox" id="pansalvado" name="panaderia" value="pansalvado"/>
+       <label>Pan de salvado</label></br>
+       <input type="checkbox" id="panintegral" name="panaderia" value="panintegral"/>
+       <label>Pan de molde integral</label></br>
+       <input type="checkbox" id="figazzitas" name="panaderia" value="figazzitas"/>
+       <label>Figazzitas</label></br>
+       <select id="figazzitas" name="figazzitas">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="figazzitas50">50</option>
+        <option value="figazzitas100">100</option>
+        <option value="figazzitas150">150</option>
+       </select><br>
+       <input type="checkbox" id="chips" name="panaderia" value="chips"/>
+       <label>Chips</label></br>
+       <select id="chips" name="chips">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="chips50">50</option>
+        <option value="chips100">100</option>
+        <option value="chips150">150</option>
+       </select><br>
+       <input type="checkbox" id="cuernitos" name="panaderia" value="cuernitos"/>
+       <label>Cuernitos</label></br>
+       <select id="Cuernitos" name="cuernitos">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="cuernitos1/4">1/4</option>
+        <option value="cuernitos1/2">1/2</option>
+        <option value="cuernitos1">1kg</option>
+       </select><br>
+       <input type="checkbox" id="cremona" name="panaderia" value="cremona"/>
+       <label>Cremona</label></br>
+       <input type="checkbox" id="pastelitos" name="panaderia" value="pastelitos"/>
+       <label> Pastelitos</label></br>
+       <input type="checkbox" id="grisines" name="panaderia" value="grisines"/>
+       <label>Grisines</label></br>
+       <select id="grisines" name="grisines">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="grisines1/4">1/4</option>
+        <option value="grisines1/2">1/2</option>
+        <option value="grisines1">1kg</option>
+       </select><br>
+       <input type="checkbox" id="stolen" name="panaderia" value="stolen"/>
+       <label>Stolen</label></br>
+       <input type="checkbox" id="pandulce" name="panaderia" value="pandulce"/>
+       <label>Pan Dulce</label></br>
+       <select id="pandulce" name="pandulce">
+        <option value="" selected disabled hidden>Tamaño</option>
+        <option value="250">250gr</option>
+        <option value="500">500gr</option>
+        <option value="1000">1000gr</option>
+       </select><br>
+       <select id="pandulce" name="pandulce">
+        <option value="" selected disabled hidden>Elegir sabor.</option>
+        <option value="frutossecos">Frutos secos</option>
+        <option value="chipsdechocolate">Chips de chocolate</option>
+        <option value="futaabrillantada">Fruta abrillantada</option>
+        <option value="pasasdeuva">Pasas de uva</option>
+        <option value="todo">Todo</option>
+       </select><br>
 
-</p>
-<p>
-<ol>
-    <li>
-        <h4><ins>Alfajores</ins></h4>
-        <ul>
-
-            <input type="radio" name="alfajores" value="maicena">Maicenas</br>
-            <input type="radio" name="alfajores" value="mardelplata">Chocolate tipo mardel</br>
-            <input type="radio" name="alfajores" value="glaseados">Glaseados</br>
-
-        </ul>
-    </li>
-</ol>
-
-</p>
-<p>
-<ol>
-    <li>
-        <h4><ins>Panaderia</ins></h4>
-        <ul>
-
-            <input type="radio" name="panaderia" value="rosca">Rosca de pascua</br>
-            <input type="radio" name="panaderia" value="pizzetas">Pizzetas</br>
-            <input type="radio" name="panaderia" value="pandesemillas">Pan de semillas</br>
-            <input type="radio" name="panaderia" value="cuernitos">Cuernitos</br>
-            <input type="radio" name="panaderia" value="cremona">Cremona</br>
-            <input type="radio" name="panaderia" value="chips">Chips</br>
-            <input type="radio" name="panaderia" value="pastelitos">Pastelitos</br>
-            <input type="radio" name="panaderia" value="figazzitas">Figazzitas</br>
-            <input type="radio" name="panaderia" value="grisines">Grisines</br>
-            <input type="radio" name="panaderia" value="pandulce">Pan dulce <select>
-                <option value="" selected disabled hidden>Tamaño</option>
-                <option value="250">250gr</option>
-                <option value="500">500gr</option>
-                <option value="1000">1000gr</option>
-            </select> <select>
-                <option value="" selected disabled hidden>Elegir sabor.</option>
-                <option value="frutossecos">Frutos secos</option>
-                <option value="chipsdechocolate">Chips de chocolate</option>
-                <option value="futaabrillantada">Fruta abrillantada</option>
-                <option value="pasasdeuva">Pasas de uva</option>
-                <option value="todo">Todo</option>
-            </select>
-            </select></br>
-            <input type="radio" name="panaderia" value="salvado">Pan de salvado</br>
-            <input type="radio" name="panaderia" value="stolen">Stolen</br>
-        </ul>
-    </li>
-</ol>
-
-</p>
-<p>
-<ol>
-    <li>
-        <h4><ins>Mas pasteleria</ins></h4>
-        <ul>
-
-            <input type="radio" name="pasteleria" value="4cuartos">Budin de manteca<select>
-                <option value="" selected disabled hidden>Elegir sabor.</option>
-                <option value="frutossecos">Frutos secos.</option>
-                <option value="chipschoco">Chips de chocolate.</option>
-            </select></br>
-            <input type="radio" name="pasteleria" value="budin">Budin <select >
-                <option value="" selected disabled hidden>Elegir sabor.</option>
-                <option value="chocolate">Chocolate.</option>
-                <option value="chipschoco">Vainilla.</option>
-                <option value="naranja">Naranja.</option>
-                <option value="limon">Limon.</option>
-                <option value="marmolado">Marmolado.</option>
-            </select></br>
-            <input type="radio" name="pasteleria" value="canoncitos">Cañoncitos</br>
-            <input type="radio" name="pasteleria" value="pionono">Pionono</br>
-            <input type="radio" name="pasteleria" value="budinpan">Budin de pan</br>
-            <input type="radio" name="pasteleria" value="bizcochuelo">Bizcochuelo marmolado</br>
-            <input type="radio" name="pasteleria" value="rosquita">Rosquita</br>
-            <input type="radio" name="pasteleria" value="flan">Flan</br>
-            <input type="radio" name="pasteleria" value="macarons">Macarons</br>
-            <input type="radio" name="pasteleria" value="bizcochuelo">Bizcochuelo marmolado</br>
-        </ul>
-    </li>
-</ol>
-</p>
+       <label><h4><ins>M&aacute;s pasteleria</ins></h4></label>
+       <input type="checkbox" id="4cuartos" name="mas" value="4cuartos"/>
+       <label>Budin de manteca</label></br>
+       <select id="4cuartos" name="4cuartos">
+        <option value="" selected disabled hidden>Elegir sabor.</option>
+        <option value="frutossecos">Frutos secos.</option>
+        <option value="chipschoco">Chips de chocolate.</option>
+      </select></br>
+       <input type="checkbox" id="budin" name="mas" value="budin"/>
+       <label>Budin</label></br>
+       <select id="budin" name="budin">
+        <option value="selected disabled hidden">Elegir sabor.</option>
+        <option value="chocolate">Chocolate.</option>
+        <option value="chipschoco">Vainilla.</option>
+        <option value="naranja">Naranja.</option>
+        <option value="limon">Limon.</option>
+        <option value="marmolado">Marmolado.</option>
+      </select></br>
+       <input type="checkbox" id="canoncitos" name="mas" value="canoncitos"/>
+       <label>Cañoncitos</label></br>
+       <select id="canoncitos" name="canoncitos">
+        <option value="selected disabled hidden">Elegir cantidad</option>
+        <option value="canoncitos250">250gr</option>
+        <option value="canoncitos500">500gr</option>
+        <option value="canoncitos750">750gr</option>
+       </select><br>
+       <input type="checkbox" id="pionono" name="mas" value="pionono"/>
+       <label>Pionono</label></br>
+       <input type="checkbox" id="budinpan" name="mas" value="budinpan"/>
+       <label>Budin de pan</label></br>   
+       <input type="checkbox" id="bizcochuelo" name="mas" value="bizcochuelo"/>
+       <label>Bizcochuelo de 24cm</label></br>  
+       <select id="bizcochuelo" name="bizcochuelo">
+        <option value="selected disabled hidden">Elegir sabor</option>
+        <option value="vainilla">Vainilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="marmolado">Marmolado</option>
+       </select><br>
+      <input type="checkbox" id="flan" name="mas" value="flan"/>
+       <label>Flan</label></br>
+       <input type="checkbox" id="rosquita" name="mas" value="rosquita"/>
+       <label>Rosquitas</label></br>
+       <select id="rosquita" name="rosquita">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="rosquita6">1/2 docena</option>
+        <option value="rosquita12">1 docena</option>
+        <option value="rosquita24">2 docenas</option>
+       </select><br>
+       <input type="checkbox" id="macarons" name="mas" value="macarons"/>
+       <label>Macarons</label></br>  
+       <select id="glaseados" name="glaseados">
+        <option value="selected disabled hidden"> Elegir cantidad</option>
+        <option value="macarons6">1/2 docena</option>
+        <option value="macarons12">1 docena</option>
+        <option value="macarons24">2 docenas</option>
+       </select><br>    
+       <input type="checkbox" id="turron" name="mas" value="turron"/>
+       <label>Turron Quaker</label></br>
+     
+</form>
+</br>
+<a href="mailto:lucia.jacqueline.baez@gmail.com?subject=Pedidos tortas&body=Quiero pedir"> Enviar pedido </a>
+<a href=#tarta>Volver al men&uacute;</a>
+<link rel='stylesheet' href="css/estilo.css"/>
+</head>
 </body>
 </html>
